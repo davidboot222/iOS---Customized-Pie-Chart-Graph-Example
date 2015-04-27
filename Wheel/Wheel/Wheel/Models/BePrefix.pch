@@ -1,0 +1,28 @@
+//  BePrefix.pch
+//  Created by BE
+
+#ifndef BePrefix_pch
+#define BePrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
+#import "Config.h"
+#import "UIImageView+AFNetworking.h"
+#import "UIButton+AFNetworking.h"
+
+#import "AppController.h"
+#import "CommonUtils.h"
+
+#define appController [AppController sharedInstance]
+#define commonUtils [CommonUtils shared]
+
+
+#import "MainViewController.h"
+
+#endif
